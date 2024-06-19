@@ -32,7 +32,7 @@
 		<li
 			style:--bg-url="url({artist.pdp_file
 				? getArtistPDPURL(artist)
-				: "/logo.jpg"})"
+				: "/logo.png"})"
 		>
 			<div>
 				<div class="topside">

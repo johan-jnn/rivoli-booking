@@ -7,7 +7,7 @@
 
 <header>
 	<a href="/" class="banner" on:click={closeMenu}>
-		<img src="/banner.jpg" alt="Logo de la marque" />
+		<img src="/banner.png" alt="Logo de la marque" />
 	</a>
 
 	<nav>

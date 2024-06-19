@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<meta property="og:image" content="/logo.jpg" />
+	<meta property="og:image" content="/logo.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Rivoli Booking" />
 	<meta name="description" content="Rivoli Booking, la touche créative qui donne vie à vos projets." />

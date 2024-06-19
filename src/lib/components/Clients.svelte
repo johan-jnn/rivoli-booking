@@ -8,7 +8,6 @@
 
 <Section
 	heading={{
-		title: "Nos clients",
 		button: {
 			label: "Contacter",
 			url: "/contact",

@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let heading: {
-		title: string;
+		title?: string;
 		description?: string;
 		link?: {
 			label: string;
@@ -31,13 +31,17 @@
 </script>
 
 <section
-	id={heading.customID || heading.title.toLowerCase().replaceAll(/\s+/g, "-")}
+	id={heading.customID ||
+		heading.title?.toLowerCase().replaceAll(/\s+/g, "-") ||
+		null}
 	style:padding={section_style?.padding}
 	style:margin={section_style?.margin}
 >
 	<div class="heading">
 		<div class="topline">
-			<h2>{heading.title}</h2>
+			{#if heading.title}
+				<h2>{heading.title}</h2>
+			{/if}
 			{#if heading.link || heading.button}
 				<div class="cta">
 					{#if heading.link}
@@ -79,6 +83,10 @@
 <style lang="scss">
 	section {
 		margin: 120px 0;
+
+		&:not(:has(>.heading h2)) {
+			margin-top: 25px;
+		}
 		> .heading {
 			padding: 5px 15px;
 
@@ -95,8 +103,10 @@
 
 				> .cta {
 					display: flex;
+					justify-content: flex-end;
 					align-items: flex-end;
 					gap: 15px;
+					flex-grow: 1;
 
 					> a {
 						margin: 0;

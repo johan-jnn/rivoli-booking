@@ -4,13 +4,19 @@
 	export let hero_info: {
 		title: string;
 		description: string;
-		background?:
+		background?: (
 			| {
 					video: string;
 			  }
 			| {
 					image: string;
-			  };
+			  }
+		) & {
+			overlay?: {
+				blur?: number;
+				color?: number;
+			};
+		};
 		button?: {
 			label: string;
 			link?: string;
@@ -22,7 +28,11 @@
 <div id="hero" data-theme={hero_info.mode || "auto"}>
 	{#if hero_info.background}
 		{@const { background } = hero_info}
-		<div class="background">
+		<div
+			class="background"
+			style:--bg-blur="{background.overlay?.blur || 0}px"
+			style:--bg-overlay-color={background.overlay?.color || null}
+		>
 			{#if "video" in background}
 				<video
 					src={background.video}
@@ -92,6 +102,8 @@
 
 			mask-image: linear-gradient(to bottom, #000 75%, transparent);
 
+			filter: blur(var(--bg-blur));
+
 			> * {
 				width: 100%;
 				height: 100%;
@@ -100,13 +112,17 @@
 		}
 
 		&[data-theme="light"] {
-			h1, p, button {
+			h1,
+			p,
+			button {
 				color: var(--color-white);
 				border-color: var(--color-white);
 			}
 		}
 		&[data-theme="invert"] {
-			h1, p, button {
+			h1,
+			p,
+			button {
 				color: var(--color-white);
 				border-color: var(--color-white);
 				mix-blend-mode: difference;
