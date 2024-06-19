@@ -1,0 +1,20 @@
+[
+	{
+		"question": "Comment puis-je booker un artiste via RivoliBooking pour mon événement",
+		"answers": [
+			"Vous pouvez nous contacter directement via notre site web ou par email pour nous faire part de vos besoins en matière d'artiste pour votre événement. Nous vous aiderons à trouver le DJ, musicien ou chanteur parfait parmi notre réseau de talent chez Foolish Studio."
+		]
+	},
+	{
+		"question": "Quels types d'artistes peut-on booker via Foolish Studio ?",
+		"answers": [
+			"Foolish Studio propose un large éventail d'artistes, y compris des DJs, des musiciens et des chanteurs pour tous les styles de musique. Nous sommes fiers de pouvoir vous aider à trouver l'artiste idéal pour votre événement."
+		]
+	},
+	{
+		"question": "Comment se déroule le processus de booking d'un artiste via Foolish Studio ?",
+		"answers": [
+			"Après avoir discuté de vos besoins avec l'un de nos représentants, nous vous présenterons une sélection d'artistes disponibles pour votre événement. Vous pouvez alors choisir l'artiste qui vous convient le mieux et nous nous chargerons de finaliser les détails de votre booking avec Foolish Studio."
+		]
+	}
+]

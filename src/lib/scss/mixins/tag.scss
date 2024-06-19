@@ -1,0 +1,19 @@
+@mixin Tag($light: false) {
+  padding: 10px 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  @if $light {
+    color: var(--color-black);
+    background-color: var(--color-white);
+  } @else {
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+  text-align: center;
+  font-size: 12px;
+
+  border-radius: 5px;
+  &:hover {
+    opacity: .75;
+  }
+}

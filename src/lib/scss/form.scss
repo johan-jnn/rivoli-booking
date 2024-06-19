@@ -1,0 +1,48 @@
+form {
+  padding: 15px;
+
+  fieldset {
+    margin: 15px 0;
+    padding: 5px 15px;
+    border: dashed 2px var(--color-black);
+
+    > legend {
+      padding: 0 15px;
+    }
+  }
+
+	label {
+		display: block;
+		margin: 15px 0;
+    $child-vertical-margin: 5px;
+    > * {
+      margin: $child-vertical-margin 0;
+    }
+	}
+
+	input {
+		padding: 10px 15px;
+		font-family: inherit;
+		width: 100%;
+	}
+
+  select {
+    cursor: pointer;
+    display: block;
+    padding: 10px 5px;
+  }
+
+  textarea {
+    padding: 15px 10px;
+    width: 100%;
+    min-height: 150px;
+    font-family: inherit;
+    resize: vertical;
+  }
+
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
+}

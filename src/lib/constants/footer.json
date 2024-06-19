@@ -1,0 +1,14 @@
+{
+	"Nos services": {
+		"Les artistes": "/artists"
+	},
+	"Rivoli Booking": {
+		"News": "/news",
+		"Nous contacter": "/contact"
+	},
+	"Nous contacter": {
+		"11 rue du Havre, 75016 Paris": "#",
+		"contact@rivolibooking.com": "mailto:contact@rivolibooking.com",
+		"+33 6 12 34 56 78": "tel:+33612345678"
+	}
+}
