@@ -7,7 +7,6 @@
 	import Card from "./Card.svelte";
 	import splide_default_opt from "$lib/data/splide_default_opt";
 	import Section from "./Section.svelte";
-	import { random } from "mathjs";
 </script>
 
 <Section
