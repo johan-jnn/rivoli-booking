@@ -5,7 +5,7 @@
 	} from "$lib/components/clients/_list";
 	import { Splide, SplideSlide } from "@splidejs/svelte-splide";
 	import Card from "./Card.svelte";
-	import splide_default_opt from "$lib/data/splide_default_opt";
+	import splide_default_opt from "$lib/constants/splide_default_opt";
 	import Section from "./Section.svelte";
 </script>
 
