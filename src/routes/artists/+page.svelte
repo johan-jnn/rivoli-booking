@@ -21,13 +21,13 @@
 		},
 		button: {
 			label: "Booker un artiste",
-			link: "#content",
+			link: "#list",
 		},
 		mode: "light",
 	}}
 />
 
-<ul class="artists" id="content">
+<ul id="list">
 	{#each artists as artist}
 		<li
 			style:--bg-url="url({artist.pdp_file
@@ -60,7 +60,7 @@
 	@import "$lib/scss/colors";
 	@import "$lib/scss/mixins/tag";
 
-	ul.artists {
+	ul#list {
 		list-style: none;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

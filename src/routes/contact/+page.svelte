@@ -39,6 +39,10 @@
 	heading={{
 		title: "Booker un DJ",
 		customID: "booking",
+		link: {
+			label: "Voir la liste de nos artistes",
+			url: "/artists#list"
+		}
 	}}
 >
 	<form method="post" data-netlify="true" name="booking">
