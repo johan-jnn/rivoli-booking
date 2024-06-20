@@ -32,7 +32,7 @@
 		<button type="button">Nous contacter</button>
 	</a>
 
-	<input type="checkbox" id="menu-openner" bind:this={menuOpenner} />
+	<input type="checkbox" title="Open/close the mobile navigation menu" bind:this={menuOpenner} />
 </header>
 
 <style lang="scss">
@@ -89,7 +89,7 @@
 			display: block;
 		}
 
-		> #menu-openner {
+		> input {
 			display: none;
 		}
 
@@ -98,7 +98,7 @@
 			align-items: center;
 			justify-content: space-between;
 
-			> #menu-openner {
+			> input {
 				display: unset;
 				appearance: none;
 				height: 60%;
@@ -167,6 +167,7 @@
 					align-items: center;
 					justify-content: space-evenly;
 					opacity: 0;
+					scale: 0;
 				}
 
 				&:has(~ :checked) {
@@ -174,6 +175,7 @@
 					height: calc(100vh - var(--header-height));
 					> ul {
 						opacity: 1;
+						scale: 1;
 					}
 				}
 			}

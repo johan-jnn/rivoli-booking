@@ -1,9 +1,13 @@
 <script lang="ts">
-	import clients, { getClientBannerURL, getClientURL } from "$lib/components/clients/_list";
+	import clients, {
+		getClientBannerURL,
+		getClientURL,
+	} from "$lib/components/clients/_list";
 	import { Splide, SplideSlide } from "@splidejs/svelte-splide";
 	import Card from "./Card.svelte";
 	import splide_default_opt from "$lib/data/splide_default_opt";
 	import Section from "./Section.svelte";
+	import { random } from "mathjs";
 </script>
 
 <Section
@@ -14,13 +18,15 @@
 		},
 		link: {
 			label: "Voir tous nos clients",
-			url: "/clients"
-		}
+			url: "/clients",
+		},
 	}}
 >
 	<div class="slider">
 		<Splide options={splide_default_opt}>
-			{#each clients as client}
+			{#each clients
+				.sort(() => Math.random() - 0.5)
+				.slice(0, 5) as client}
 				<SplideSlide>
 					<Card
 						content={{

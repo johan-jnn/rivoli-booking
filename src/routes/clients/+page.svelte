@@ -13,9 +13,13 @@
 
 <Hero
 	hero_info={{
-		title: "L'expertise Rivoli",
+		title: "Nos clients",
 		description:
-			"Découvrez notre domaine d'expertise à travers tous nos projets",
+			"Ils nous font confiance... pourquoi pas vous ?",
+			button: {
+				label: "Prendre contact",
+				link: "/contact"
+			}
 	}}
 />
 
