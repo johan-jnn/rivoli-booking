@@ -2,7 +2,9 @@ import type { SvelteComponent } from "svelte";
 import type { ClientMetadata } from "./_types";
 
 import Cesar, { metadata as cesar } from "./Cesar.svelte";
-import Siena, {metadata as siena} from "./Siena.svelte";
+import Siena, { metadata as siena } from "./Siena.svelte";
+import Victoria, { metadata as victoria } from "./Victoria.svelte";
+import Kalamata, { metadata as kalamata } from "./Kalamata.svelte";
 
 export const pages = [
 	{
@@ -11,8 +13,16 @@ export const pages = [
 	},
 	{
 		metadata: siena,
-		component: Siena
-	}
+		component: Siena,
+	},
+	{
+		metadata: victoria,
+		component: Victoria,
+	},
+	{
+		metadata: kalamata,
+		component: Kalamata,
+	},
 ] as {
 	metadata: ClientMetadata;
 	component: typeof SvelteComponent;

@@ -52,8 +52,9 @@
 	<h1
 		use:reveal={{
 			preset: "fly",
-			duration: 1000,
-			blur: 5,
+			duration: 1500,
+			blur: 10,
+			disable: hero_info.mode === "invert",
 		}}
 	>
 		{hero_info.title}

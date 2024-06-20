@@ -76,6 +76,7 @@
 					name="besoins"
 					id="needs"
 					placeholder="Décrivez-nous vos besoins"
+					required
 				></textarea>
 			</label>
 		</fieldset>
@@ -92,7 +93,7 @@
 							(artist) => artist.name === selectedArtist
 						)}>Nous laisser choisir le plus adapté</option
 					>
-					{#each artists as { name }}
+					{#each artists as { name, styles }}
 						<option value={name} selected={name === selectedArtist}
 							>{name}</option
 						>
@@ -112,9 +113,10 @@
 				Lieu de l'événement
 				<input
 					type="text"
-					name="location"
+					name="lieu"
 					bind:this={locationElement}
 					id="location"
+					required
 				/>
 			</label>
 		</fieldset>
@@ -166,6 +168,7 @@
 				name="requête"
 				id="request"
 				placeholder="Décrivez-nous votre requête"
+				required
 			></textarea>
 		</label>
 

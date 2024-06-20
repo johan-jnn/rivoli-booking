@@ -16,6 +16,7 @@
     place-content: center;
     justify-items: center;
     gap: 25px;
+		padding: 10px;
 
     border-radius: 15px;
 

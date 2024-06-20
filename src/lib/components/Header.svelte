@@ -155,11 +155,9 @@
 				overflow: hidden;
 				background-color: var(--color-white);
 
-				transition: 0.25s ease-in-out;
-
-				&:has(~ :checked) {
-					padding: 25px 15px;
-					height: calc(100vh - var(--header-height));
+				&,
+				> ul {
+					transition: 0.75s cubic-bezier(0.5, 0, 0.25, 1.25);
 				}
 
 				> ul {
@@ -168,6 +166,15 @@
 					flex-direction: column;
 					align-items: center;
 					justify-content: space-evenly;
+					opacity: 0;
+				}
+
+				&:has(~ :checked) {
+					padding: 25px 15px;
+					height: calc(100vh - var(--header-height));
+					> ul {
+						opacity: 1;
+					}
 				}
 			}
 		}

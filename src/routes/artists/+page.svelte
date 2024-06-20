@@ -21,13 +21,13 @@
 		},
 		button: {
 			label: "Booker un artiste",
-			link: "/contact",
+			link: "#content",
 		},
 		mode: "light",
 	}}
 />
 
-<ul class="artists">
+<ul class="artists" id="content">
 	{#each artists as artist}
 		<li
 			style:--bg-url="url({artist.pdp_file

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { reveal } from "svelte-reveal";
+
 	export let heading: {
 		title?: string;
 		description?: string;
@@ -40,7 +42,7 @@
 	<div class="heading">
 		<div class="topline">
 			{#if heading.title}
-				<h2>{heading.title}</h2>
+				<h2 use:reveal>{heading.title}</h2>
 			{/if}
 			{#if heading.link || heading.button}
 				<div class="cta">
@@ -73,7 +75,7 @@
 			{/if}
 		</div>
 		{#if heading.description}
-			<p>{heading.description}</p>
+			<p use:reveal>{heading.description}</p>
 		{/if}
 	</div>
 
@@ -96,7 +98,7 @@
 				justify-content: space-between;
 				margin-bottom: 10px;
 
-				> h2 {
+				h2 {
 					font-size: 5vw;
 					color: var(--color-primary);
 				}
@@ -127,7 +129,7 @@
 					}
 				}
 			}
-			> p {
+			p {
 				max-width: 750px;
 				font-style: italic;
 			}

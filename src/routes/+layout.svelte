@@ -5,13 +5,28 @@
 	import "$lib/scss/_app.scss";
 	import "svelte-reveal/styles.css";
 	import "@splidejs/svelte-splide/css";
+
+	import { onNavigate } from "$app/navigation";
+
+	onNavigate((navigation) => {
+		if ("startViewTransition" in document)
+			return new Promise((resolve) => {
+				document.startViewTransition(async () => {
+					resolve();
+					await navigation.complete;
+				});
+			});
+	});
 </script>
 
 <svelte:head>
 	<meta property="og:image" content="/logo.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Rivoli Booking" />
-	<meta name="description" content="Rivoli Booking, la touche créative qui donne vie à vos projets." />
+	<meta
+		name="description"
+		content="Rivoli Booking, la touche créative qui donne vie à vos projets."
+	/>
 	<meta name="theme-color" content="#ff3131" />
 </svelte:head>
 

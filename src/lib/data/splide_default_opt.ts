@@ -11,7 +11,7 @@ export default {
 		right: 15,
 	},
 	autoplay: true,
-	interval: 5000,
+	interval: 15000,
 	pagination: false,
 	breakpoints: {
 		1150: {
