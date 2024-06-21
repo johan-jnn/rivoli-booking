@@ -38,6 +38,7 @@
 <Section
 	heading={{
 		title: "Booker un DJ",
+		description: "Demandez à booker un DJ : nous reviendrons vers vous pour finaliser le booking !",
 		customID: "booking",
 		link: {
 			label: "Voir la liste de nos artistes",
