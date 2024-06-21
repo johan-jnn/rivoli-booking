@@ -28,12 +28,12 @@
 	<title>Nous contacter - Rivoli Booking</title>
 </svelte:head>
 
-<Hero
+<!-- <Hero
 	hero_info={{
 		title: "Nous contacter",
 		description: "Une question ? Un DJ à booker ? Contactez-nous !",
 	}}
-/>
+/> -->
 
 <Section
 	heading={{

@@ -18,30 +18,20 @@
 		background: {
 			video: "/videos/abstract_fluid_background_colored.webm",
 			overlay: {
-				blur: 5
-			}
+				blur: 5,
+			},
 		},
 		button: {
 			label: "Découvrir nos clients",
 			link: "/clients",
 		},
-		mode: "invert"
+		mode: "invert",
 	}}
 />
 
 <main>
-	<section class="accroche">
-		<p>
-			Choisissez le service qui correspond à votre vision. Rivoli Booking
-			vous accompagne en Image, Digital et Artistes pour une réalisation
-			sur mesure !
-		</p>
-	</section>
-
-	<h2>Une vision sur-mesure</h2>
-
-	<Clients />
 	<Artists />
+	<Clients />
 	<ContactCta />
 
 	<FAQ />
@@ -50,13 +40,5 @@
 <style lang="scss">
 	main {
 		padding: 0 15px;
-		> section {
-			margin: 50px 0;
-		}
-		.accroche {
-			margin: 10vh auto;
-			width: min(100%, 550px);
-			text-align: center;
-		}
 	}
 </style>

@@ -48,7 +48,7 @@
 			width: 100%;
 			aspect-ratio: 1 / 1;
 			background-color: rgba(
-				$color: map-get($map: $colors, $key: "black"),
+				$color: map-get($map: $colors, $key: "light"),
 				$alpha: 0.15
 			);
 			border-radius: 5px;
@@ -78,7 +78,7 @@
 		}
 
 		> p {
-			color: lighten($color: map-get($colors, "black"), $amount: 50);
+			color: lighten($color: map-get($colors, "light"), $amount: 50);
 			font-size: 18px;
 		}
 	}

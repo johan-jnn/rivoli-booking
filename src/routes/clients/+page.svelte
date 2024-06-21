@@ -48,7 +48,6 @@
 	{/each}
 </ul>
 
-<Partners />
 <ContactCta />
 
 <style lang="scss">
@@ -73,13 +72,13 @@
 				width: 100%;
 				height: 100%;
 				padding: 5%;
-				color: var(--color-white);
+				color: var(--color-light);
 				text-decoration: none;
 
 				position: relative;
 
 				background: var(--bg-url),
-					lighten($color: map-get($colors, "black"), $amount: 10);
+					lighten($color: map-get($colors, "dark"), $amount: 10);
 				background-position: center;
 				background-size: cover;
 
@@ -96,7 +95,7 @@
 
 					pointer-events: none;
 
-					background-color: var(--color-black);
+					background-color: var(--color-dark);
 					opacity: 0;
 					transition: opacity $hover-transition;
 

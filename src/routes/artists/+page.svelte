@@ -53,7 +53,6 @@
 </ul>
 
 <FAQ />
-<Partners />
 <ContactCTA />
 
 <style lang="scss">
@@ -79,7 +78,7 @@
 
 		> li {
 			background: var(--bg-url),
-				lighten($color: map-get($colors, "black"), $amount: 75);
+				lighten($color: map-get($colors, "dark"), $amount: 50);
 			background-position: center;
 			background-size: cover;
 			aspect-ratio: 1 / 1;
@@ -88,9 +87,9 @@
 				height: 100%;
 				padding: 25px;
 
-				color: var(--color-white);
+				color: var(--color-dark);
 				background-color: rgba(
-					$color: map-get($colors, "black"),
+					$color: map-get($colors, "light"),
 					$alpha: 0.5
 				);
 

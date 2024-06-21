@@ -99,7 +99,7 @@
 				margin-bottom: 10px;
 
 				h2 {
-					font-size: 5vw;
+					font-size: max(5vw, 50px);
 					color: var(--color-primary);
 				}
 
@@ -112,6 +112,7 @@
 
 					> a {
 						margin: 0;
+						text-wrap: nowrap;
 					}
 				}
 

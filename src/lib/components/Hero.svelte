@@ -52,7 +52,6 @@
 	<h1
 		use:reveal={{
 			preset: "fly",
-			duration: 1500,
 			blur: 10,
 			disable: hero_info.mode === "invert",
 		}}
@@ -71,7 +70,7 @@
 
 <style lang="scss">
 	#hero {
-		height: calc(100vh - var(--header-height, 10vh));
+		height: calc(90vh - var(--header-height, 10vh));
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -116,17 +115,21 @@
 			h1,
 			p,
 			button {
-				color: var(--color-white);
-				border-color: var(--color-white);
+				color: var(--color-light);
+				border-color: var(--color-light);
 			}
 		}
 		&[data-theme="invert"] {
 			h1,
 			p,
 			button {
-				color: var(--color-white);
-				border-color: var(--color-white);
+				color: var(--color-light);
+				border-color: var(--color-light);
 				mix-blend-mode: difference;
+			}
+
+			button {
+				background-color: transparent;
 			}
 		}
 	}

@@ -100,8 +100,8 @@
 				flex-wrap: wrap;
 				gap: 15px;
 
-				background-color: var(--color-black);
-				color: var(--color-white);
+				background-color: var(--color-light);
+				color: var(--color-dark);
 			}
 		}
 	}

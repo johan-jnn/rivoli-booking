@@ -46,6 +46,7 @@
 			text-align: left;
 			font-family: inherit;
 			font-size: 1em;
+			color: var(--color-light);
 
 			display: grid;
 			grid-template-columns: 24px 1fr;
@@ -70,7 +71,7 @@
 
 					border-radius: 999px;
 
-					background-color: var(--color-black);
+					background-color: var(--color-light);
 				}
 				&::before {
 					rotate: 90deg;
@@ -86,7 +87,7 @@
 		> .answer {
 			margin-top: 25px;
 
-			color: darken($color: map-get($colors, "white"), $amount: 50);
+			color: lighten($color: map-get($colors, "dark"), $amount: 75);
 		}
 	}
 </style>

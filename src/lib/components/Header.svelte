@@ -48,7 +48,7 @@
 		left: 0;
 		width: 100%;
 		height: var(--header-height);
-		background-color: var(--color-white);
+		background-color: var(--color-dark);
 
 		z-index: 10;
 
@@ -115,14 +115,14 @@
 					position: absolute;
 					left: 50%;
 					width: 75%;
-					height: 10%;
+					height: 5%;
 
 					transform-origin: center center;
 					translate: -50% -50%;
 
 					border-radius: 999px;
 
-					background-color: var(--color-black);
+					background-color: var(--color-light);
 
 					transition: 0.25s;
 				}
@@ -153,7 +153,7 @@
 				height: 0;
 				padding: 0;
 				overflow: hidden;
-				background-color: var(--color-white);
+				background-color: var(--color-dark);
 
 				&,
 				> ul {

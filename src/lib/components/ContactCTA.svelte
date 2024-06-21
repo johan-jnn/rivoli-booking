@@ -8,9 +8,9 @@
 	.contact-cta {
 		min-height: 350px;
 		max-width: 95vw;
-		margin: 0 auto;
+		margin: 50px auto;
 		background-color: var(--color-primary);
-		color: var(--color-white);
+		color: var(--color-dark);
 		text-align: center;
     display: grid;
     place-content: center;

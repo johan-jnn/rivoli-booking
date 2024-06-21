@@ -40,6 +40,7 @@
 		> li {
 			height: 25px;
 			aspect-ratio: 1 / 1;
+			filter: invert(1);
 
 			* {
 				display: inline-block;
