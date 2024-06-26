@@ -16,16 +16,15 @@
 		description:
 			"Rivoli Booking, la touche créative qui donne vie à vos projets. Avec une palette complète de services en Image, Digital et Artistes, nous vous aidons à atteindre vos objectifs avec élégance et excellence.",
 		background: {
-			video: "/videos/abstract_fluid_background_colored.webm",
+			video: "/videos/homepage-background.webm",
 			overlay: {
-				blur: 5,
+				blur: 10,
 			},
 		},
 		button: {
 			label: "Découvrir nos clients",
 			link: "/clients",
 		},
-		mode: "invert",
 	}}
 />
 

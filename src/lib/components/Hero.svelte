@@ -16,6 +16,8 @@
 				blur?: number;
 				color?: number;
 			};
+			mode?: "cover" | "contain";
+			scale?: number;
 		};
 		button?: {
 			label: string;
@@ -32,6 +34,8 @@
 			class="background"
 			style:--bg-blur="{background.overlay?.blur || 0}px"
 			style:--bg-overlay-color={background.overlay?.color || null}
+			style:--bg-mode={background.mode}
+			style:--bg-scale={background.scale}
 		>
 			{#if "video" in background}
 				<video
@@ -104,10 +108,13 @@
 
 			filter: blur(var(--bg-blur));
 
+			overflow: hidden;
+
 			> * {
 				width: 100%;
 				height: 100%;
-				object-fit: cover;
+				object-fit: var(--bg-mode, cover);
+				scale: var(--bg-scale, 1);
 			}
 		}
 
@@ -117,6 +124,9 @@
 			button {
 				color: var(--color-light);
 				border-color: var(--color-light);
+			}
+			button:hover {
+				color: var(--color-dark);
 			}
 		}
 		&[data-theme="invert"] {

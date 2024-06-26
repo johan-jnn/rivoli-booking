@@ -4,7 +4,7 @@
 	import Card from "./Card.svelte";
 	import splide_default_opt from "$lib/constants/splide_default_opt";
 	import Section from "./Section.svelte";
-	import { getArtistBookingURL, getArtistPDPURL } from "$lib/utils/artists";
+	import { getArtistBookingURL, getArtistDiscoverURL, getArtistPDPURL } from "$lib/utils/artists";
 </script>
 
 <Section
@@ -32,8 +32,8 @@
 							title: artist.name,
 							description: artist.bio,
 							link: {
-								url: getArtistBookingURL(artist),
-								label: "Booker",
+								url: getArtistDiscoverURL(artist),
+								label: "Découvrir",
 							},
 							tags: artist.styles,
 							image: artist.pdp_file

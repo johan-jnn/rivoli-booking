@@ -5,7 +5,7 @@
 	import FAQ from "$lib/components/faq/FAQ.svelte";
 	import Partners from "$lib/components/Partners.svelte";
 	import ContactCTA from "$lib/components/ContactCTA.svelte";
-	import { getArtistBookingURL, getArtistPDPURL } from "$lib/utils/artists";
+	import { getArtistBookingURL, getArtistDiscoverURL, getArtistPDPURL } from "$lib/utils/artists";
 </script>
 
 <svelte:head>
@@ -34,7 +34,7 @@
 				? getArtistPDPURL(artist)
 				: "/logo.png"})"
 		>
-			<div>
+			<a href={getArtistDiscoverURL(artist)}>
 				<div class="topside">
 					<ul>
 						{#each artist.styles as style}
@@ -47,7 +47,7 @@
 				</div>
 
 				<a href={getArtistBookingURL(artist)}>Booker</a>
-			</div>
+			</a>
 		</li>
 	{/each}
 </ul>
@@ -83,9 +83,10 @@
 			background-size: cover;
 			aspect-ratio: 1 / 1;
 
-			> div {
+			> a {
 				height: 100%;
 				padding: 25px;
+				text-decoration: none;
 
 				color: var(--color-dark);
 				background-color: rgba(
@@ -122,7 +123,7 @@
 				}
 			}
 
-			&:hover > div {
+			&:hover > a {
 				opacity: 1;
 			}
 		}

@@ -5,6 +5,12 @@ import Cesar, { metadata as cesar } from "./Cesar.svelte";
 import Siena, { metadata as siena } from "./Siena.svelte";
 import Victoria, { metadata as victoria } from "./Victoria.svelte";
 import Kalamata, { metadata as kalamata } from "./Kalamata.svelte";
+import Mamamia, { metadata as mamamia } from "./Mamamia.svelte";
+import Verde, { metadata as verde } from "./Verde.svelte";
+import Mondaine, { metadata as mondaine } from "./Mondaine.svelte";
+import Manko, { metadata as manko } from "./Manko.svelte";
+import LImportant, { metadata as limportant } from "./LImportant.svelte";
+import Yacatan, { metadata as yacatan } from "./Yacatan.svelte";
 
 export const pages = [
 	{
@@ -22,6 +28,30 @@ export const pages = [
 	{
 		metadata: kalamata,
 		component: Kalamata,
+	},
+	{
+		metadata: mamamia,
+		component: Mamamia,
+	},
+	{
+		metadata: verde,
+		component: Verde,
+	},
+	{
+		metadata: mondaine,
+		component: Mondaine,
+	},
+	{
+		metadata: manko,
+		component: Manko,
+	},
+	{
+		metadata: limportant,
+		component: LImportant,
+	},
+	{
+		metadata: yacatan,
+		component: Yacatan,
 	},
 ] as {
 	metadata: ClientMetadata;

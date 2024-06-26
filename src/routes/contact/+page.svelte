@@ -132,7 +132,7 @@
 
 <Section
 	heading={{
-		title: "Autre information",
+		title: "Autres informations",
 		description: "Pour toutes questions ou informations complémentaire",
 		customID: "any",
 		link: {

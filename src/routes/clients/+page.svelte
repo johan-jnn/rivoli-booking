@@ -80,7 +80,8 @@
 				background: var(--bg-url),
 					lighten($color: map-get($colors, "dark"), $amount: 10);
 				background-position: center;
-				background-size: cover;
+				background-size: 75%;
+				background-repeat: no-repeat;
 
 				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 				transition: clip-path $hover-transition;

@@ -24,6 +24,8 @@
 		background: metadata.banner_file
 			? {
 					image: getClientBannerURL(metadata) || "",
+					mode: "contain",
+					scale: 0.75,
 				}
 			: undefined,
 		mode: metadata.use_light_theme ? "light" : "auto",

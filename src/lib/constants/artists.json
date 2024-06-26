@@ -3,50 +3,50 @@
 		"name": "Marie",
 		"bio": "Marie Dubois est une DJ de musique techno, appréciée pour ses performances vibrantes et son style unique sur la scène parisienne.",
 		"contact": {
-			"tel": "+33198765432",
+			"phone": "+33198765432",
 			"linkedin": "https://www.linkedin.com/in/mariedubois"
 		},
-		"pdp_file": "",
+		"pdp_file": null,
 		"styles": ["Techno"]
 	},
 	{
 		"name": "Lucas",
 		"bio": "Lucas Martin est un DJ de deep house qui attire les foules avec ses sets envoûtants et ses beats profonds dans les clubs de Paris.",
 		"contact": {
-			"tel": "+33123456780",
+			"phone": "+33123456780",
 			"linkedin": "https://www.linkedin.com/in/lucasmartin"
 		},
-		"pdp_file": "",
+		"pdp_file": null,
 		"styles": ["Deep House"]
 	},
 	{
 		"name": "Sophie",
 		"bio": "Sophie Leroy est une DJ de trance dont les performances énergiques et mélodiques captivent le public des festivals et clubs parisiens.",
 		"contact": {
-			"tel": "+33123456781",
+			"phone": "+33123456781",
 			"linkedin": "https://www.linkedin.com/in/sophieleroy"
 		},
-		"pdp_file": "",
+		"pdp_file": null,
 		"styles": ["Trance"]
 	},
 	{
 		"name": "Antoine",
 		"bio": "Antoine Blanc est un DJ de drum and bass dynamique, connu pour ses rythmes rapides et ses sets puissants sur les scènes parisiennes.",
 		"contact": {
-			"tel": "+33123456782",
+			"phone": "+33123456782",
 			"linkedin": "https://www.linkedin.com/in/antoineblanc"
 		},
-		"pdp_file": "",
+		"pdp_file": null,
 		"styles": ["Drum and Bass"]
 	},
 	{
 		"name": "Isabelle",
 		"bio": "Isabelle Dupont est une DJ de musique électro-pop qui enchante le public avec ses mix entraînants et ses vibes uniques dans les clubs de Paris.",
 		"contact": {
-			"tel": "+33123456783",
+			"phone": "+33123456783",
 			"linkedin": "https://www.linkedin.com/in/isabelledupont"
 		},
-		"pdp_file": "",
+		"pdp_file": null,
 		"styles": ["Electro-Pop"]
 	}
 ]
